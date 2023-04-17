@@ -1,0 +1,191 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  width: 800px;
+  height: 500px;
+  background-image: url(bg-pattern-desktop.svg);
+  position: relative;
+}
+
+.apparel {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  padding: 70px;
+
+}
+
+h1 {
+  letter-spacing: 6px;
+}
+
+span {
+  display: block;
+  margin-top: 60px;
+  font-size: 2rem;
+  font-weight: lighter;
+  letter-spacing: 6px;
+  color: hsl(0, 36%, 70%);
+}
+
+p {
+  margin-top: 50px;
+  color: hsl(0, 36%, 70%);
+  font-size: 0.7rem;
+}
+
+input {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 24px;
+  font-size: 0.7rem;
+}
+
+input::placeholder {
+  padding-left: 5px;
+  color: hsl(0, 36%, 70%);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.hero {
+  position: absolute;
+  right: 0;
+}
+
+.model {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: -109px;
+}
+.mobile-img {
+  display: none;
+}
+.email-area {
+  position: relative;
+}
+#error {
+  width: 20px;
+  position: absolute;
+  right: 40px;
+  top: 30px;
+}
+.submit-button {
+  width: 50px;
+  position: absolute;
+  right: -30px;
+  top: 20px;
+  padding: 7px 30px;
+  background-image: linear-gradient(
+    to right,
+    hsl(0, 80%, 86%) 0%,
+    hsl(0, 50%, 50%) 100%
+  );
+  border: none;
+  border-radius: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background-image: linear-gradient(
+    to right,
+    hsl(0, 80%, 86%) 0%,
+    hsl(0, 74%, 74%) 100%
+  );
+}
+.arrow {
+  text-align: center;
+  position: relative;
+  right: 3px;
+}
+.hidden {
+  display: none;
+}
+#whenError {
+  margin-top: 5px;
+  margin-left: 17px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    height: 100vh;
+    justify-items: center;
+    align-items: baseline;
+
+  }
+  .main-container {
+    background-color: hsl(0, 36%, 70%,0.2);
+    background-image: none;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 600px;
+    position: relative;
+  }
+  .model {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+    width: 100%;
+    height: 200px;
+  }
+  .hero {
+    position: relative;
+  }
+  .apparel {
+    width: 100%;
+    padding: 0;
+  }
+  .logo{
+    padding: 20px;
+  }
+  span{
+    margin-top: 30px;
+  }
+  p{
+    margin:30px;
+    margin-bottom: 0px;
+
+  }
+  #whenError{
+    text-align: start;
+  }
+  .text-area{
+    text-align: center;
+  }
+  .email-area{
+    width: 75%;
+    margin: auto;
+  }
+}

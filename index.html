@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="main-container">
+        <div class="apparel">
+          <img class="logo" src="logo.svg" alt="" />
+          <div class="hero">
+            <img class="model" src="hero-desktop.jpg" alt="" />
+            <img class="mobile-img" src="hero-mobile.jpg" alt="" />
+          </div>
+          <span class="text-area">WE'RE</span>
+          <h1 class="text-area">COMING</h1>
+          <h1 class="text-area">SOON</h1>
+          <p class="text-area">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <div class="email-area text-area">
+            <input
+              type="email"
+              name="Email"
+              id="text"
+              placeholder="Email Address"
+            />
+            <img id="error" class="hidden" src="icon-error.svg" alt="error" />
+            <button type="button" class="submit-button" onclick="validate()">
+              <img class="arrow" src="icon-arrow.svg" alt="submit" />
+            </button>
+            <p id="whenError"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://twitter.com/therajansingh1">Rajan Singh</a>.
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
